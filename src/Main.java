@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        int number = 0;
+        int number;
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введите целое, положительное число, меньше 50: ");
         try {
