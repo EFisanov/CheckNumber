@@ -1,11 +1,17 @@
 import java.math.BigDecimal;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        int number = 0;
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Введите число:");
-        int number = scanner.nextInt();
+        System.out.print("Введите целое, положительное число, меньше 50: ");
+        try {
+            number = scanner.nextInt();
+        } catch (InputMismatchException e) {
+            throw new RuntimeException("Число не целое или введённый символ не является числом");
+        }
 
         if (number < 0) {
             throw new RuntimeException("Число не положительное");
