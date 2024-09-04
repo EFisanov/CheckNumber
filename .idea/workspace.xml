@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de08885b-9a2f-4501-8ecc-73108d57982b" name="Changes" comment="">
+    <list default="true" id="de08885b-9a2f-4501-8ecc-73108d57982b" name="Changes" comment="[.i] (TASK-1) Reports. Исправлена обработка исключений при введении не целого числа или символа, не являющегося числом.">
+      <change afterPath="$PROJECT_DIR$/src/InvalidArgumentException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -13,21 +14,28 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "EFisanov"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;EFisanov&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/EFisanov/CheckNumber.git",
-    "accountId": "48ef4b54-54d6-42ae-b473-65cc0eb8e120"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/EFisanov/CheckNumber.git&quot;,
+    &quot;accountId&quot;: &quot;48ef4b54-54d6-42ae-b473-65cc0eb8e120&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -44,7 +52,7 @@
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "onboarding.tips.debug.path": "C:/Users/efisanov/IdeaProjects/CheckNumber/src/Main.java",
-    "settings.editor.selected.configurable": "preferences.sourceCode.Java"
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -56,6 +64,38 @@
       <option name="presentableId" value="Default" />
       <updated>1725369744689</updated>
     </task>
+    <task id="LOCAL-00001" summary="[.i] (TASK-1) Reports. Исправлена обработка исключений при введении не целого числа или символа, не являющегося числом.">
+      <option name="closed" value="true" />
+      <created>1725421349519</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1725421349519</updated>
+    </task>
+    <task id="LOCAL-00002" summary="[.i] (TASK-1) Reports. Исправлена обработка исключений при введении не целого числа или символа, не являющегося числом.">
+      <option name="closed" value="true" />
+      <created>1725421411809</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1725421411809</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="[.i] (TASK-1) Reports. Исправлена обработка исключений при введении не целого числа или символа, не являющегося числом." />
+    <option name="LAST_COMMIT_MESSAGE" value="[.i] (TASK-1) Reports. Исправлена обработка исключений при введении не целого числа или символа, не являющегося числом." />
   </component>
 </project>

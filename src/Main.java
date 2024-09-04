@@ -1,27 +1,45 @@
 import java.math.BigDecimal;
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        int number;
+        String inputLine = "";
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Введите целое, положительное число, меньше 50: ");
-        try {
-            number = scanner.nextInt();
-        } catch (InputMismatchException e) {
-            throw new RuntimeException("Число не целое или введённый символ не является числом");
-        }
 
-        if (number < 0) {
-            throw new RuntimeException("Число не положительное");
-        }
-        if (number >= 50) {
-            throw new RuntimeException("Число больше 50");
-        }
+        while (!inputLine.equals("exit")) {
 
-        BigDecimal fact = getFactorial(number);
-        System.out.println(fact);
+            System.out.print("Для выхода введите \"exit\". \n" +
+                    "Введите целое положительное число, меньше 50: ");
+            inputLine = scanner.nextLine();
+
+            if (inputLine.equals("exit")) {
+                System.out.print("Выход.");
+                break;
+            }
+
+            try {
+                int number = 0;
+
+                try {
+                    number = Integer.parseInt(inputLine);
+                } catch (NumberFormatException exception) {
+                    System.out.println("Число не целое или введена не допустимая команда");
+                }
+
+                if (number < 0) {
+                    throw new NegativeNumberException("Число не положительное");
+                }
+
+                if (number >= 50) {
+                    throw new InvalidArgumentException("Число больше 50");
+                }
+
+                BigDecimal fact = getFactorial(number);
+                System.out.println(fact);
+            } catch (NegativeNumberException | InvalidArgumentException exception) {
+                System.out.println(exception.getMessage());
+            }
+        }
     }
 
     public static BigDecimal getFactorial(int number) {
