@@ -1,42 +1,48 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.math.BigDecimal;
-import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
-        String inputLine = "";
-        Scanner scanner = new Scanner(System.in);
+    public static void main(String[] args) throws IOException {
 
-        while (!inputLine.equals("exit")) {
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+
+        while (true) {
 
             System.out.print("Для выхода введите \"exit\". \n" +
-                    "Введите целое положительное число, меньше 50: ");
-            inputLine = scanner.nextLine();
+                    "Введите целое положительное число, до 50: ");
 
-            if (inputLine.equals("exit")) {
-                System.out.print("Выход.");
-                break;
-            }
+            String inputLine = bufferedReader.readLine();
 
             try {
-                int number = 0;
-
-                try {
-                    number = Integer.parseInt(inputLine);
-                } catch (NumberFormatException exception) {
-                    System.out.println("Число не целое или введена не допустимая команда");
+                if (inputLine.matches("[a-zA-Z]+") && inputLine.equals("exit")) {
+                    System.out.print("Выход.");
+                    System.exit(0);
                 }
 
-                if (number < 0) {
+                if (inputLine.charAt(0) == '-') {
                     throw new NegativeNumberException("Число не положительное");
                 }
 
-                if (number >= 50) {
-                    throw new InvalidArgumentException("Число больше 50");
+                if (inputLine.contains(".")) {
+                    throw new NotIntegerException("Число не целое");
                 }
 
-                BigDecimal fact = getFactorial(number);
-                System.out.println(fact);
-            } catch (NegativeNumberException | InvalidArgumentException exception) {
+                if (inputLine.matches("[0-9]+")) {
+                    int number = Integer.parseInt(inputLine);
+                    if (number >= 50) {
+                        throw new InvalidArgumentException("Число больше 49");
+                    }
+                    BigDecimal fact = getFactorial(number);
+                    System.out.println(fact);
+                } else {
+                    throw new NotSupportedException("Команда не поддерживается");
+                }
+
+
+            } catch (NotIntegerException | NotSupportedException | NegativeNumberException |
+                     InvalidArgumentException exception) {
                 System.out.println(exception.getMessage());
             }
         }

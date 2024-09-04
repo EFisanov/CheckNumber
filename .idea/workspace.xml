@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de08885b-9a2f-4501-8ecc-73108d57982b" name="Changes" comment="[.i] (TASK-1) Reports. Исправлена обработка исключений при введении не целого числа или символа, не являющегося числом.">
-      <change afterPath="$PROJECT_DIR$/src/InvalidArgumentException.java" afterDir="false" />
+    <list default="true" id="de08885b-9a2f-4501-8ecc-73108d57982b" name="Changes" comment="[.i] (TASK-1) Добавлен NegativeNumberException.">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/NotIntegerException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/NotSupportedException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -22,6 +24,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -45,16 +52,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "onboarding.tips.debug.path": "C:/Users/efisanov/IdeaProjects/CheckNumber/src/Main.java",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;input__stream__reader&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/efisanov/IdeaProjects/CheckNumber/src/Main.java&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -80,7 +93,23 @@
       <option name="project" value="LOCAL" />
       <updated>1725421411809</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="[.i] (TASK-1) Реализован перехват исключений и продолжение работы приложения при их возникновении. Введены целевые типы исключений.">
+      <option name="closed" value="true" />
+      <created>1725438570627</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1725438570627</updated>
+    </task>
+    <task id="LOCAL-00004" summary="[.i] (TASK-1) Добавлен NegativeNumberException.">
+      <option name="closed" value="true" />
+      <created>1725438690679</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1725438690679</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -96,6 +125,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="[.i] (TASK-1) Reports. Исправлена обработка исключений при введении не целого числа или символа, не являющегося числом." />
-    <option name="LAST_COMMIT_MESSAGE" value="[.i] (TASK-1) Reports. Исправлена обработка исключений при введении не целого числа или символа, не являющегося числом." />
+    <MESSAGE value="[.i] (TASK-1) Реализован перехват исключений и продолжение работы приложения при их возникновении. Введены целевые типы исключений." />
+    <MESSAGE value="[.i] (TASK-1) Добавлен NegativeNumberException." />
+    <option name="LAST_COMMIT_MESSAGE" value="[.i] (TASK-1) Добавлен NegativeNumberException." />
   </component>
 </project>
