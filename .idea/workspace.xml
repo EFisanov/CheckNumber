@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de08885b-9a2f-4501-8ecc-73108d57982b" name="Changes" comment="[.i] (TASK-1) Reports. Исправлена обработка исключений при введении не целого числа или символа, не являющегося числом.">
-      <change afterPath="$PROJECT_DIR$/src/InvalidArgumentException.java" afterDir="false" />
+    <list default="true" id="de08885b-9a2f-4501-8ecc-73108d57982b" name="Changes" comment="[.i] (TXPG-9516) Исправлено. Удалена лишняя ветка разработки.">
+      <change afterPath="$PROJECT_DIR$/src/NotIntegerException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/NotSupportedException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -22,6 +23,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="input_stream_reader" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -51,10 +57,16 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/efisanov/IdeaProjects/CheckNumber/src",
     "onboarding.tips.debug.path": "C:/Users/efisanov/IdeaProjects/CheckNumber/src/Main.java",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\efisanov\IdeaProjects\CheckNumber\src" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
