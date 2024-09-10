@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de08885b-9a2f-4501-8ecc-73108d57982b" name="Changes" comment="[.i] (TXPG-9516) Исправлено. Удалена лишняя ветка разработки.">
-      <change afterPath="$PROJECT_DIR$/src/NotIntegerException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NotSupportedException.java" afterDir="false" />
+    <list default="true" id="de08885b-9a2f-4501-8ecc-73108d57982b" name="Changes" comment="[.i] (TXPG-9516) Используется правильный номер задачи в коммите. Конструкция while заменена на do while. Удалено дублирование выхода из цикла.  Удалена лишняя ветка разработки. Сообщения об ошибках выводятся в System.err.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -51,17 +49,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/efisanov/IdeaProjects/CheckNumber/src",
-    "onboarding.tips.debug.path": "C:/Users/efisanov/IdeaProjects/CheckNumber/src/Main.java",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/efisanov/IdeaProjects/CheckNumber/src&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/efisanov/IdeaProjects/CheckNumber/src/Main.java&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\efisanov\IdeaProjects\CheckNumber\src" />
@@ -92,7 +90,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725421411809</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="[.i] (TXPG-9516) Используется правильный номер задачи в коммите. Конструкция while заменена на do while. Удалено дублирование выхода из цикла.  Удалена лишняя ветка разработки. Сообщения об ошибках выводятся в System.err.">
+      <option name="closed" value="true" />
+      <created>1725533350659</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1725533350659</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -108,6 +114,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="[.i] (TASK-1) Reports. Исправлена обработка исключений при введении не целого числа или символа, не являющегося числом." />
-    <option name="LAST_COMMIT_MESSAGE" value="[.i] (TASK-1) Reports. Исправлена обработка исключений при введении не целого числа или символа, не являющегося числом." />
+    <MESSAGE value="[.i] (TXPG-9516) Используется правильный номер задачи в коммите. Конструкция while заменена на do while. Удалено дублирование выхода из цикла.  Удалена лишняя ветка разработки. Сообщения об ошибках выводятся в System.err." />
+    <option name="LAST_COMMIT_MESSAGE" value="[.i] (TXPG-9516) Используется правильный номер задачи в коммите. Конструкция while заменена на do while. Удалено дублирование выхода из цикла.  Удалена лишняя ветка разработки. Сообщения об ошибках выводятся в System.err." />
   </component>
 </project>

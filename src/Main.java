@@ -7,10 +7,10 @@ public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         String inputLine;
+        System.out.print("Для выхода введите \"exit\".\n");
 
         do {
-            System.out.print("Для выхода введите \"exit\". \n" +
-                    "Введите целое положительное число, до 50: ");
+            System.out.print("Введите целое положительное число, до 50: ");
 
             inputLine = bufferedReader.readLine();
 
@@ -39,7 +39,7 @@ public class Main {
                 System.err.println(exception.getMessage());
             }
         }
-        while (!inputLine.equals("exit"));
+        while (isContinue(inputLine));
     }
 
     public static BigDecimal getFactorial(int number) {
@@ -48,6 +48,10 @@ public class Main {
             result = result.multiply(BigDecimal.valueOf(i));
         }
         return result;
+    }
+
+    private static boolean isContinue(String string) {
+        return !string.equals("exit");
     }
 }
 
